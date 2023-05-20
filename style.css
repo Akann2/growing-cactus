@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5f9ea0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pot {
+  width: 100px;
+  height: 80px;
+  background-color: #7c4e35;
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+}
+.pot::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #57471e;
+  width: 100px;
+  height: 5px;
+}
+#cactus {
+  bottom: 50px;
+  background-image: url("cactus.svg");
+  width: 60px;
+  height: 60px;
+  background-color: #006400;
+  border-radius: 3rem;
+  transition: height 2s;
+}
