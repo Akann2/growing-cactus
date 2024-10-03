@@ -42,10 +42,30 @@ body {
   transition: height 2s;
 }
 
-#height {
+#height, #days {
   position: fixed;
-  top: 5px;
   right:10px;
   color: white;
   font-size: 2rem;
+}
+
+#days{
+  top: 5px;
+}
+#height{
+  top:40px;
+}
+
+@media (max-width: 565px) {
+  #height, #days{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 439px) {
+  #height, #days{
+    font-size: 1rem;
+  }
+  #height{
+    top:25px
+  }
 }

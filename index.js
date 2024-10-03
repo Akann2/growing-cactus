@@ -1,5 +1,6 @@
 const cactus = document.getElementById("cactus");
 const heightpx = document.getElementById("height");
+const days = document.getElementById("days");
 let height = 60;
 
 function growCactus() {
@@ -7,7 +8,8 @@ function growCactus() {
   var timeDiff = Math.abs(Date.now() - startDate.getTime());
   var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
   height += 10;
-  heightpx.innerText  = (diffDays * 10) + 'px'
+  days.innerText = 'Days: ' + diffDays
+  heightpx.innerText  = 'Height: ' + (diffDays * 10) + 'px'
   cactus.style.height = (diffDays * 10) + 'px';
 }
 
