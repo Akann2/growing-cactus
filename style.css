@@ -5,6 +5,7 @@
 
 body {
   background-color: #5f9ea0;
+  font-family: inter;
 }
 
 .container {
@@ -39,4 +40,12 @@ body {
   background-color: #006400;
   border-radius: 3rem;
   transition: height 2s;
+}
+
+#height {
+  position: fixed;
+  top: 5px;
+  right:10px;
+  color: white;
+  font-size: 2rem;
 }
